@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -54,14 +55,14 @@ body {
     color: #fff;
 }
 
-/*Form */
+/* Form */
 .contact-box {
     width: 90%;
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(10px); 
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     color: #222;
@@ -91,7 +92,7 @@ form {
     height: 40px;
     padding: 10px;
     border: 1px solid rgba(119, 119, 119, 0.5);
-    background: rgba(255, 255, 255, 0.6); /* Semi-transparent input field */
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 14px;
     outline: none;
     font-size: 1rem;
@@ -121,4 +122,47 @@ form {
 
 .btn:hover {
     background-color: #3a9e4a;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .image-section img {
+        max-width: 250px;
+    }
+
+    .contact-box {
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
 }
