@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('./Images/back2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #222;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 50px 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+    max-width: 400px;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.content {
+    flex: 2;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #b60112;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/*Form */
+.contact-box {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #222;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #b60112;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgba(119, 119, 119, 0.5);
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent input field */
+    border-radius: 14px;
+    outline: none;
+    font-size: 1rem;
+    color: #222;
+}
+
+.input-field::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.textarea-field {
+    height: 120px;
+    resize: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #47c35a;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3a9e4a;
+}
